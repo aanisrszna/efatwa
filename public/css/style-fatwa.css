@@ -1,0 +1,224 @@
+/* 
+
+================
+COLORS REFERENCE
+================
+
+Background: #2a3a3f
+Background: rgba(42,58,63,0.8)
+Red color: #ec5552
+White color: #f6f6f6
+Black color: #3b3b3b
+
+
+*/
+
+
+/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.375em;
+  color: #3b3b3b;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV BAR */
+.navbar-inverse {
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+  max-width: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-brand img {
+    max-width: 50px;
+  }
+}
+
+.navbar-inverse .navbar-nav nav-link {
+  color: #f6f6f6;
+}
+
+/* COVER PAGE */
+
+html, body {
+  height: 100%;
+}
+
+.cover, .bg {
+  height: 100%;
+  width: 100%;
+}
+
+
+.bg {
+  background: linear-gradient(rgba(42, 58, 63, 0.8), rgba(42, 58, 63, 0.8)),
+    url('https://www.kosmo.com.my/wp-content/uploads/2023/08/Masjid-perak-gambar-hiasan.jpeg');
+  background-size: cover;
+  background-position: 70%;
+}
+
+.cover {
+  color: #f6f6f6;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.landing-page--message {
+  text-align: center;
+  padding: 0 10%;
+}
+
+.landing-page--message h1 {
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-page--message h1 {
+    font-size: 70px;
+    letter-spacing: -3px;
+  }
+}
+
+.landing-page--message .btn-outline-danger {
+  color: white;
+  border-width: 5px;
+}
+
+.landing-page--message a:link,
+.landing-page--message a:hover,
+.landing-page--message a:visited,
+.landing-page--message a:active {
+  color: #f6f6f6;
+}
+
+.landing-page--message a:hover {
+  text-decoration: none;
+}
+
+/* SERVICES PAGE */
+
+.dev {
+  border-top: 5px solid #d3c331;
+  border-bottom: 5px solid #d3c331;
+  border-left: 10px solid #d3c331;
+  border-right: 10px solid #d3c331;
+  padding: 5%;
+  width: inherit;
+}
+
+.dev h1 {
+  font-weight: lighter;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.dev h1 strong {
+  color: #d3c331;
+  font-weight: 700;
+}
+
+#first-page {
+  border-top: 10px solid #d3c331;
+}
+
+/* WORK PAGE */
+
+.work h2 {
+  font: lighter 2em "Montserrat", sans-serif;
+  margin: .5em 0 0;
+}
+
+.work h3 {
+  font: italic 1em "Montserrat", sans-serif;
+  margin: 1em 0;
+}
+
+.work p {
+  height: 10em;
+}
+
+#new-section {
+  background-color: #f8f9fa; /* Set your desired background color */
+  padding: 2em;
+}
+
+#new-section h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#new-section p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+#new-section img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+#new-section {
+  min-height: 50vh; /* Ensure the section takes at least the full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#new-section .container {
+  max-width: 800px; /* Set a maximum width for the container */
+}
+/* HIRE PAGE */
+
+#hire-me {
+  background: #d3c331;
+  font-family: 'Your_Attractive_Font', sans-serif;
+  color: #000000;
+  margin: 0;
+  padding: 4em 0 4em;
+  text-align: center;
+  width: inherit;
+}
+
+#hire-me h1 {
+  margin: 0 0 1em;
+}
+
+#hire-me p {
+  width: 60%;
+  margin: 0 auto 2em;
+}
+
+button.btn.btn-lg.btn-white {
+  border: 5px solid #f6f6f6;
+  background-color: #d3c331;
+  color: #f6f6f6;
+}
+
+button.btn.btn-lg.btn-white:hover {
+  background: #f6f6f6;
+  color: #d3c331;
+  transition: all 0.2s ease-in;
+}
+
+button.btn.btn-lg.btn-white:focus {
+  box-shadow: none;
+}
+
+/* FOOTER */
+footer {
+  background: #3b3b3b;
+  color: #f6f6f6;
+}
